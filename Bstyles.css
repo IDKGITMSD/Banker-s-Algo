@@ -1,0 +1,542 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d1116;
+}
+
+#wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+#wrapper::-webkit-scrollbar-button {
+  display: none;
+}
+
+#wrapper::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+#wrapper::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#wrapper::-webkit-scrollbar-corner {
+  background-color: #0f1216;
+  color: #0f1216;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.content {
+  background-color: #0d1116;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+.content::-webkit-scrollbar-button {
+  display: none;
+}
+
+.content::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.content::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.contnet::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.content::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.nav-tool {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 0.5px solid #5b636ac0;
+  background-color: #0e111a;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+  gap: 2rem;
+}
+
+.toolbar-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0.2rem 0.5rem 0.2rem 0.2rem;
+  border-radius: 5px;
+}
+
+.tool-logo {
+  width: 29px;
+}
+
+.toolbar-item:hover {
+  background-color: #838e9729;
+  transition: background-color 0s;
+  cursor: pointer;
+}
+
+.tool-text {
+  color: #e6edf3;
+  font-family: Noto Sans;
+  font-size: 0.95rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 0.7rem 1rem;
+}
+
+.logo {
+  width: 31px;
+  border: 0.25px solid #5b636ac0;
+  border-radius: 15%;
+}
+
+.logo:hover {
+  background-color: #838e9729;
+  transition: background-color 0s;
+}
+.logo-div {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.logo-text {
+  color: #e6edf3;
+  margin-left: 10px;
+  font-family: Noto Sans;
+}
+
+#schedulerDiv {
+  margin-bottom: 0px;
+  border-bottom: 1.5px solid #2a903b;
+  padding-bottom: 0.3rem;
+}
+
+.processDetails {
+  max-width: 70%;
+  margin: 2.5rem auto;
+}
+
+.tableDiv {
+  width: 100%;
+  overflow-x: auto;
+  transform: translateX(1rem);
+}
+
+.tableDiv::-webkit-scrollbar-button {
+  display: none;
+}
+
+.tableDiv::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.tableDiv::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.tableDiv::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.tableDiv::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.processTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0rem;
+  border: 0.25px solid #e6edf3;
+  min-width: 607px;
+  overflow-x: auto;
+}
+
+.processTable::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processTable::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.processTable::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processTable::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.processTable::-webkit-scrollbar-corner {
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+@media screen and (max-width: 870px) {
+  .tableDiv {
+    overflow-x: scroll;
+  }
+
+  .tableDiv::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  .tableDiv::-webkit-scrollbar {
+    width: 4px;
+    color: #6d6f71
+  }
+  
+  .tableDiv::-webkit-scrollbar-track {
+    color: #0f1216;
+  }
+  
+  .tableDiv::-webkit-scrollbar-thumb {
+    background-color: #6d6f71;
+    border-radius: 10px;
+    background-clip: padding-box;
+  }
+
+  .tableDiv::-webkit-scrollbar-corner{
+    color: #0f1216;
+    background-color: #0f1216;
+  }
+}
+
+table,
+th,
+td,
+tr {
+  border-collapse: collapse;
+  border: 0.25px solid #e6edf3;
+}
+
+.headCell {
+  background-color: #838e9729;
+  color: #e6edf3;
+  width: 16%;
+  font-family: Noto Sans;
+  font-weight: 200;
+  padding: 0.5rem 0;
+  font-size: 0.85rem;
+}
+
+.processAdder {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 100%;
+  width: fit-content;
+  margin: 2.5rem 1rem;
+  border: 0.5px solid #77828bc0;
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.processAdder::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processAdder::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.processAdder::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processAdder::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.processAdder::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.adderTitle {
+  color: #e6edf3;
+  font-family: Noto Sans;
+}
+
+.processDetailsInput {
+  margin: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 0.6rem;
+}
+
+.inpField {
+  font-family: Noto Sans;
+  background-color: #e6edf3;
+  color: gray;
+  height: 2.5rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  border: none;
+  overflow: scroll;
+}
+
+.inpField::-webkit-scrollbar-button {
+  display: none;
+}
+
+.inpField::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.inpField::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.inpField::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.inpField::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.addGreenButton {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #238636;
+  color: #e6edf3;
+  font-family: Noto Sans;
+  border: none;
+  border-radius: 5px;
+  margin-right: 1rem;
+}
+
+.addGreenButton:hover {
+  cursor: pointer;
+  background-color: #2a903b;
+}
+
+.addGreenButton:disabled {
+  cursor: not-allowed;
+}
+
+.addGreenButton:disabled:hover {
+  background-color: #238636;
+}
+
+/* To remove arrows from number input field from Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* To remove arrows from number input field from Firefox */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.tableBody td {
+  padding: 0.5rem 0.5rem;
+  font-family: Noto Sans;
+  font-size: 0.85rem;
+  color: #e6edf3;
+  background-color: #838e9729;
+}
+
+.timeQuantAndExe {
+  margin: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.goButton {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #238636;
+  color: #e6edf3;
+  font-family: Noto Sans;
+  border: none;
+  border-radius: 5px;
+}
+
+.goButton:hover {
+  cursor: pointer;
+  background-color: #2a903b;
+}
+
+.goButton:disabled {
+  cursor: not-allowed;
+}
+
+.goButton:disabled:hover {
+  background-color: #238636;
+}
+
+.resetButton {
+  height: 2.5rem;
+  width: 5rem;
+  background-color: #c63924;
+  color: #e6edf3;
+  font-family: Noto Sans;
+  border: none;
+  border-radius: 5px;
+}
+
+.resetButton:hover {
+  cursor: pointer;
+  background-color: #d13e2a;
+}
+
+.processorLog {
+  width: 80%;
+  height: 7%;
+  overflow-y: hidden;
+  margin: 2.5rem 1rem;
+  border: 0.5px solid #77828bc0;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-bottom: 0rem;
+}
+
+.processorLog::-webkit-scrollbar-button {
+  display: none;
+}
+
+.processorLog::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+.processorLog::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+.processorLog::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+.processorLog::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
+}
+
+.logTitle,
+.statTitle {
+  color: #e6edf3;
+  font-family: Noto Sans;
+}
+
+.logListDiv,
+.statListDiv {
+  margin: 0.9rem;
+  width: 100%;
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 0.6rem;
+  overflow-y: hidden;
+}
+
+#logList,
+#statList {
+  list-style: disc;
+}
+
+li {
+  font-family: Noto Sans;
+  color: #e6edf3;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.5rem;
+  margin: o.25rem;
+  border-radius: 5px;
+}
+
+li::marker {
+  color: #e6edf3;
+}
+
+#schedulingStat {
+  width: 80%;
+  margin: 2.5rem 1rem;
+  border: 0.5px solid #77828bc0;
+  border-radius: 10px;
+  padding: 1rem;
+  padding-bottom: 0rem;
+  overflow: hidden;
+  display: none;
+}
+
+#schedulingStat::-webkit-scrollbar-button {
+  display: none;
+}
+
+#schedulingStat::-webkit-scrollbar {
+  width: 4px;
+  color: #6d6f71
+}
+
+#schedulingStat::-webkit-scrollbar-track {
+  color: #0f1216;
+}
+
+#schedulingStat::-webkit-scrollbar-thumb {
+  background-color: #6d6f71;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+#schedulingStat::-webkit-scrollbar-corner{
+  color: #0f1216;
+  background-color: #0f1216;
+}
